@@ -1,0 +1,8 @@
+.lol {
+  font-size: 11px;
+}
+button {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}

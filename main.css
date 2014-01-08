@@ -1,0 +1,38 @@
+body {
+  font: 14px/16px Helvetica, sans-serif;
+  color: #333333;
+}
+
+p {
+  font-size: 16.8px;
+}
+
+.class1, .class2 {
+  background-repeat: no-repeat;
+}
+
+.class2 {
+  background-size: 10px 20px;
+}
+
+.item-1 {
+  width: 2em;
+}
+
+.item-2 {
+  width: 4em;
+}
+
+.item-3 {
+  width: 6em;
+}
+
+.primary {
+  color: red;
+  background-color: lime;
+  border-color: blue;
+}
+
+.reload {
+  color: blue;
+}

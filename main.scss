@@ -1,0 +1,38 @@
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+$font-size: 14px;
+$line-height: 16px;
+$font-default-size: #{$font-size}/#{$line-height};
+$font-default: $font-default-size $font-stack;
+
+body {
+  font: $font-default;
+  color: $primary-color;
+}
+p {
+  font-size: $font-size*1.2;
+}
+.class1 {
+  background-repeat: no-repeat;
+}
+.class2 {
+  @extend .class1;
+  background-size: 10px 20px;
+}
+@for $i from 1 through 3 {
+  .item-#{$i} { width: 2em * $i; }
+}
+@mixin colors($text, $background, $border) {
+  color: $text;
+  background-color: $background;
+  border-color: $border;
+}
+
+$values: #ff0000, #00ff00, #0000ff;
+.primary {
+  @include colors(#ff0000, #00ff00, #0000ff);
+}
+
+.reload {
+  color: blue;
+}
